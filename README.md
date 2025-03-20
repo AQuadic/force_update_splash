@@ -16,4 +16,4 @@ Add the following to your `pubspec.yaml` file:
 dependencies:
   force_update_splash:
     git:
-      url: https://github.com/your-repo/force_update_splash.git
+      url: https://github.com/aquadic/force_update_splash.git
