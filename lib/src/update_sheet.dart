@@ -44,7 +44,10 @@ class _UpdateSheetState extends State<UpdateSheet> {
     return PopScope(
       canPop: false,
       child: Container(
-        width: MediaQuery.of(context).size.width,
+        width: MediaQuery
+            .of(context)
+            .size
+            .width,
         padding: const EdgeInsets.all(40),
         decoration: const BoxDecoration(
           color: Colors.white,
@@ -64,7 +67,12 @@ class _UpdateSheetState extends State<UpdateSheet> {
               child: Text(
                 localizedText['title']!,
                 style:
-                    const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: isIOS ? const Color(0xFF00A1FE) : const Color(
+                      0xFF007559),
+                ),
               ),
             ),
             Text(
@@ -72,7 +80,7 @@ class _UpdateSheetState extends State<UpdateSheet> {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Colors.grey.shade600),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 20),
             Directionality(
               textDirection: TextDirection.rtl,
               child: ElevatedButton.icon(
@@ -81,9 +89,9 @@ class _UpdateSheetState extends State<UpdateSheet> {
                     child: const Icon(Icons.arrow_upward, color: Colors.white)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor:
-                      isIOS ? const Color(0xFF00A1FE) : const Color(0xFF007559),
+                  isIOS ? const Color(0xFF00A1FE) : const Color(0xFF007559),
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                  const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
