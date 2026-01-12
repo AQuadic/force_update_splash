@@ -1,23 +1,23 @@
 name: force_update_splash
 description: "A new Flutter project."
-version: 0.0.2+002
+version: 0.0.3+003
 homepage:
 
 environment:
-  sdk: ^3.5.3
+  sdk: ^3.8.0
   flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.3.2
-  package_info_plus: ^8.3.0
+  package_info_plus: ^9.0.0
   http: ^1.4.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
